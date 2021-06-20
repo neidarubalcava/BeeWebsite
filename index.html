@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>bees</title>
-</head>
-<body>
-<h1>Types of Bees</h1>
-<p>Why Bees Are Important</p>
-<img src="images/bumblebee1.jpg" style="width:20%;height:20%;">
-<br>
-</body>
+  <head>
+
+      <title>bees</title>
+
+      <style>
+        p {
+          font-family: fantasy;
+          color:purple;
+          font-size:15px;
+        }
+        .container {
+          width:80%
+          overflow:hidden;
+
+        }
+        #logo {
+          color: yellow;
+          background-color: purple;
+          font-size: 70px;
+          width: 450px;
+          text-align: center;
+        }
+
+      </style>
+  </head>
+  <body>
+    <div class="container">
+
+    <h1 id="logo">My Bee Page</h1>
+    <a href="about.html" style="padding:20px;margin:20px;"><h2>About</h2></a>
+    <h1 title="Type of Bees">Types of Bees</h1>
+    <h3>Why Bees Are Important</h3>
+    <p>Bees are vital for the preservation of ecological balance and biodiversity in nature<p>
+    <p> They pollinate plants which is what makes food production possible<p>
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>Origin</th>
+        <th>Life Span</th>
+      </tr>
+      <tr>
+        <td>Bumblee Bee</td>
+        <td>Europe</td>
+        <td>28 Days</td>
+      </tr>
+      <tr>
+        <td>Honey Bee</td>
+        <td>America</td>
+        <td>14 Days</td>
+      </tr>
+      <tr>
+        <td>Killer Bee</td>
+        <td>South America</td>
+        <td>10 Weeks</td>
+      </tr>
+    </table>
+    <img src="images/bumblebee1.jpg" style="width:20%;height:20%;"><br>
+    <img src="images/bumblebee2.jpg" style="width:20%;height:20%;"><br>
+    <img src="images/honeybee1.jpg" style="width:20%;height:20%;"><br>
+    <img src="images/honeybee2.jpg" style="width:20%;height:20%;"><br>
+    <br>
+    <hr>
+      <script>
+      function myFunction() {
+        document.getElementById("bees").style.fontSize = "40px";
+        document.getElementById("bees").style.color = "black";
+        document.getElementById("bees").style.backgroundColor = "yellow";
+        document.getElementById("bees").innerHTML = "Save The Bees!"
+
+      }
+      </script>
+      <a href="https://www.honeybeesuite.com/">Important Link</a>
+
+      <button type="button" onclick="myFunction()"><h1>Bzzzzzz</h1></button>
+      <h2 id="bees"></h2>
+
+
+      <hr>
+
+      </div>
+  </body>
+
 </html>
